@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAAF340425C8435100C6AFDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340325C8435100C6AFDD /* LoginViewController.swift */; };
+		FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340625C8436400C6AFDD /* RegisterViewController.swift */; };
+		FAAF340A25C8437C00C6AFDD /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */; };
+		FAAF340D25C8438700C6AFDD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340C25C8438700C6AFDD /* ProfileViewController.swift */; };
+		FAAF341025C8439400C6AFDD /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340F25C8439400C6AFDD /* PhotoViewerViewController.swift */; };
+		FAAF341325C843A200C6AFDD /* VideoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF341225C843A200C6AFDD /* VideoViewerViewController.swift */; };
 		FAD7108A25C8402E009E5ADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7108925C8402E009E5ADF /* AppDelegate.swift */; };
 		FAD7108C25C8402E009E5ADF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7108B25C8402E009E5ADF /* SceneDelegate.swift */; };
-		FAD7108E25C8402E009E5ADF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7108D25C8402E009E5ADF /* ViewController.swift */; };
+		FAD7108E25C8402E009E5ADF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7108D25C8402E009E5ADF /* ConversationViewController.swift */; };
 		FAD7109125C8402E009E5ADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD7108F25C8402E009E5ADF /* Main.storyboard */; };
 		FAD7109325C84031009E5ADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD7109225C84031009E5ADF /* Assets.xcassets */; };
 		FAD7109625C84031009E5ADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD7109425C84031009E5ADF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAAF340325C8435100C6AFDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAAF340625C8436400C6AFDD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		FAAF340C25C8438700C6AFDD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAAF340F25C8439400C6AFDD /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		FAAF341225C843A200C6AFDD /* VideoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewerViewController.swift; sourceTree = "<group>"; };
 		FAD7108625C8402E009E5ADF /* FirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD7108925C8402E009E5ADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD7108B25C8402E009E5ADF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAD7108D25C8402E009E5ADF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD7108D25C8402E009E5ADF /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		FAD7109025C8402E009E5ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAD7109225C84031009E5ADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD7109525C84031009E5ADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,7 +81,13 @@
 		FAD7109E25C8403C009E5ADF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7108D25C8402E009E5ADF /* ViewController.swift */,
+				FAD7108D25C8402E009E5ADF /* ConversationViewController.swift */,
+				FAAF340325C8435100C6AFDD /* LoginViewController.swift */,
+				FAAF340625C8436400C6AFDD /* RegisterViewController.swift */,
+				FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */,
+				FAAF340C25C8438700C6AFDD /* ProfileViewController.swift */,
+				FAAF340F25C8439400C6AFDD /* PhotoViewerViewController.swift */,
+				FAAF341225C843A200C6AFDD /* VideoViewerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,7 +203,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAD7108E25C8402E009E5ADF /* ViewController.swift in Sources */,
+				FAAF340A25C8437C00C6AFDD /* NewConversationViewController.swift in Sources */,
+				FAAF340425C8435100C6AFDD /* LoginViewController.swift in Sources */,
+				FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */,
+				FAD7108E25C8402E009E5ADF /* ConversationViewController.swift in Sources */,
+				FAAF340D25C8438700C6AFDD /* ProfileViewController.swift in Sources */,
+				FAAF341025C8439400C6AFDD /* PhotoViewerViewController.swift in Sources */,
+				FAAF341325C843A200C6AFDD /* VideoViewerViewController.swift in Sources */,
 				FAD7108A25C8402E009E5ADF /* AppDelegate.swift in Sources */,
 				FAD7108C25C8402E009E5ADF /* SceneDelegate.swift in Sources */,
 			);
