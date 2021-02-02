@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA04E54125C9871600657C1C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04E54025C9871600657C1C /* Extension.swift */; };
 		FAAF340425C8435100C6AFDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340325C8435100C6AFDD /* LoginViewController.swift */; };
 		FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340625C8436400C6AFDD /* RegisterViewController.swift */; };
 		FAAF340A25C8437C00C6AFDD /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA04E54025C9871600657C1C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FAAF340325C8435100C6AFDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAAF340625C8436400C6AFDD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				FAD7108925C8402E009E5ADF /* AppDelegate.swift */,
 				FAD7108B25C8402E009E5ADF /* SceneDelegate.swift */,
+				FA04E54025C9871600657C1C /* Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */,
 				FAD7108E25C8402E009E5ADF /* ConversationViewController.swift in Sources */,
 				FAAF340D25C8438700C6AFDD /* ProfileViewController.swift in Sources */,
+				FA04E54125C9871600657C1C /* Extension.swift in Sources */,
 				FAAF341025C8439400C6AFDD /* PhotoViewerViewController.swift in Sources */,
 				FAAF341325C843A200C6AFDD /* VideoViewerViewController.swift in Sources */,
 				FAD7108A25C8402E009E5ADF /* AppDelegate.swift in Sources */,
