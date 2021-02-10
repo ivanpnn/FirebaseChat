@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     private let imageView: UIImageView = {
@@ -94,10 +95,25 @@ class LoginViewController: UIViewController {
         emailTextField.resignFirstResponder()
         passwordTextField.resignFirstResponder()
         
-        guard let email = emailTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty, password.count >= 6 else {
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text,
+              !email.isEmpty,
+              !password.isEmpty,
+              password.count >= 6 else {
             alertUser()
             return
         }
+        
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+            guard let result = authResult, error == nil else {
+                print(error!)
+                return
+            }
+            
+            let user = result.user
+            print(user)
+        }
+        
     }
     
     private func alertUser() {
