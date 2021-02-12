@@ -10,6 +10,7 @@
 		E5E1A78448CF84646E9BB754 /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D013C1C21ED61A6FAEC64C7 /* Pods_FirebaseChat.framework */; };
 		FA04E54125C9871600657C1C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA04E54025C9871600657C1C /* Extension.swift */; };
 		FA0F2A9F25CFFDC100393643 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA0F2A9E25CFFDC100393643 /* GoogleService-Info.plist */; };
+		FA6F88B325D41565001CE7C7 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6F88B225D41565001CE7C7 /* DatabaseManager.swift */; };
 		FAAF340425C8435100C6AFDD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340325C8435100C6AFDD /* LoginViewController.swift */; };
 		FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340625C8436400C6AFDD /* RegisterViewController.swift */; };
 		FAAF340A25C8437C00C6AFDD /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */; };
@@ -30,6 +31,7 @@
 		7D013C1C21ED61A6FAEC64C7 /* Pods_FirebaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA04E54025C9871600657C1C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FA0F2A9E25CFFDC100393643 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA6F88B225D41565001CE7C7 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FAAF340325C8435100C6AFDD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAAF340625C8436400C6AFDD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FAAF340925C8437C00C6AFDD /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				FAD7108925C8402E009E5ADF /* AppDelegate.swift */,
 				FAD7108B25C8402E009E5ADF /* SceneDelegate.swift */,
 				FA04E54025C9871600657C1C /* Extension.swift */,
+				FA6F88B225D41565001CE7C7 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAF340A25C8437C00C6AFDD /* NewConversationViewController.swift in Sources */,
+				FA6F88B325D41565001CE7C7 /* DatabaseManager.swift in Sources */,
 				FAAF340425C8435100C6AFDD /* LoginViewController.swift in Sources */,
 				FAAF340725C8436400C6AFDD /* RegisterViewController.swift in Sources */,
 				FAD7108E25C8402E009E5ADF /* ConversationViewController.swift in Sources */,

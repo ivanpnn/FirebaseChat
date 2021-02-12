@@ -11,7 +11,7 @@ import FirebaseAuth
 class RegisterViewController: UIViewController {
     private let imageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "person")
+        imageView.image = UIImage(systemName: "person.circle")
         imageView.tintColor = .gray
         imageView.contentMode = .scaleAspectFit
         imageView.layer.masksToBounds = true
@@ -89,7 +89,7 @@ class RegisterViewController: UIViewController {
     
     private let registerButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Log In", for: .normal)
+        button.setTitle("Register", for: .normal)
         button.backgroundColor = .link
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 10
@@ -152,20 +152,35 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            guard let result = authResult, error == nil else {
-                print(error!)
+        DatabaseManager.shared.isUserExistWith(email: email) { [weak self] exist in
+            guard let strongSelf = self else {
                 return
             }
             
-            let user = result.user
-            print(user)
+            print(exist)
+            
+            guard !exist else {
+                strongSelf.alertUser(message: "User is already exist")
+                return
+            }
+            
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                guard authResult != nil, error == nil else {
+                    print(error!)
+                    return
+                }
+                
+                DatabaseManager.shared.insertUserwWith(user: ChatAppUser(firstName: firstName, lastName: lastName, emailAddress: email))
+                
+                strongSelf.navigationController?.dismiss(animated: true, completion: nil)
+            }
         }
-      
     }
     
-    private func alertUser() {
-        let alert = UIAlertController(title: "Whoops!", message: "Please enter all information to continue", preferredStyle: .alert)
+    private func alertUser(message: String = "Please enter all information to continue") {
+        let alert = UIAlertController(title: "Whoops!",
+                                      message: message,
+                                      preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         present(alert, animated: true, completion: nil)
